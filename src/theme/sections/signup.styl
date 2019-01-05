@@ -1,0 +1,63 @@
+
+#signup
+  background-color #F6F5F9
+  margin-top 80px
+  padding 50px 0
+  .signup-section
+    justify-items center
+    text-align center
+    margin-top 3rem
+    .signup-heading
+      line-height: 0 !important
+    p
+      font-size $body-medium-font-size
+    span
+      font-size: $body-small-font-size
+  #mc-embedded-subscribe-form
+    margin-bottom 2rem
+    height 40px
+    margin-top 40
+
+  #mce-email
+  #mc-embedded-subscribe
+    appearance none
+    box-sizing border-box
+    display inline-block
+    height 40px
+    padding 0 $m-spacing
+    margin 0
+    outline none
+
+  #mce-email
+    background-color #FFFFFF
+    border none
+    color #949494
+    border-top-left-radius 3px
+    border-bottom-left-radius 3px
+    transition box-shadow 0.3s
+    height 53px
+    &:focus
+      box-shadow inset 0 0 3px #4A93FF
+
+  #mc-embedded-subscribe
+    background-color #0575e6
+    color #FFFFFF
+    border 1px solid #0575e6
+    border-top-right-radius 3px
+    border-bottom-right-radius 3px
+    line-height 40px
+    height 53px
+
+@media screen and (min-width: 1020px)
+  #mc-embedded-subscribe-form
+    margin-top 40px
+
+@media screen and (max-width: 400px)
+  span
+    margin-bottom 20px
+  #mce-email
+  #mc-embedded-subscribe
+    max-width 60%
+    line-height: 40px
+  #mc-embedded-subscribe
+    margin-top 20px

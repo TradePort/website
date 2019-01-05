@@ -1,0 +1,33 @@
+
+#bottom
+  margin-top 4rem
+  font-size $body-font-size
+  padding 2rem 0 4rem 0
+
+  .bottom-link-outer
+    line-height 2rem
+    display flex
+    flex-direction column
+    padding 1rem
+    a
+      flex 1
+      color #949494
+
+      &:hover
+        color #4A93FF
+        text-decoration underline
+
+  .bottom-link-title
+    ui-fonts()
+    font-weight 600
+    font-size: $body-font-size
+
+.footer-logo
+  margin-bottom 2rem
+
+@media screen and (max-width: 400px)
+  #bottom
+    padding 1rem
+
+  .bottom-link-outer
+    line-height 1rem

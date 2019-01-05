@@ -1,0 +1,141 @@
+
+//
+// introducing bounties.network
+// changing the way we collaborate
+//
+
+#intro
+  position relative
+  margin 100px 0 150px 0
+
+.intro-floating-image
+  display none
+  position absolute
+  z-index 100
+
+.intro-container
+  position relative
+
+// top left hex icon with background mobile
+#intro-mobile-top-left-hexagon
+  top 30px
+  left 0
+
+// top left light purple glow mobile
+#intro-mobile-top-left-purple-light
+  top 100px
+  left 60px
+
+// bottom left small bee mobile
+#intro-mobile-bottom-left-bee
+  bottom -150px
+  left 100px
+
+#intro-mobile-bottom-left-circle
+  bottom -30px
+  left 60px
+
+#intro-mobile-bottom-right-hexagons
+  bottom 50px
+  right 0
+
+#intro-mobile-bottom-right-hexagon-bee
+  bottom -120px
+  right 50px
+
+// desktop version hexagons and bees to the right
+#intro-hexagons-right
+  position absolute
+  top 50px
+  right 25px
+  z-index 100
+
+// "Changing the way we collaborate."
+#intro-description
+  margin-top 4rem
+  position relative
+  justify-self flex-start
+  text-align left
+  z-index 200
+  flex-direction column
+  h1
+    line-height 1.5
+  #mc-embedded-subscribe-form
+    margin-bottom 2rem
+    height 40px
+    margin-top 40
+
+  #mce-email
+  #mc-embedded-subscribe
+    appearance none
+    box-sizing border-box
+    display inline-block
+    height 40px
+    padding 0 $m-spacing
+    margin 0
+    outline none
+
+  #mce-email
+    background-color #FFFFFF
+    border none
+    color #949494
+    border-top-left-radius 3px
+    border-bottom-left-radius 3px
+    transition box-shadow 0.3s
+    border 1px solid #e0e0e0
+    height 53px
+    &:focus
+      box-shadow inset 0 0 3px #4A93FF
+
+  #mc-embedded-subscribe
+    background-color #0575e6
+    color #FFFFFF
+    border 1px solid #0575e6
+    border-top-right-radius 3px
+    border-bottom-right-radius 3px
+    line-height 40px
+    height 53px
+
+  p
+    color #403656
+    font-size $base-font-size
+    line-height 1.75rem;
+    margin-bottom 3rem
+  .btn
+    display inline-block
+    flex 1
+    margin-bottom $m-spacing
+
+    &:not(:last-child)
+      margin-right $m-spacing
+
+@media screen and (max-width: 1199px)
+  #intro
+    margin 50px 0 100px 0
+
+  #intro-hexagons-right
+    top 20%
+    width 700px
+
+@media screen and (max-width: 1020px)
+  #intro
+    margin 50px 0 100px 0
+
+  #intro-hexagons-right
+    width 600px
+    right -100px
+    
+  #mc-embedded-subscribe-form
+    margin-top 40px
+
+@media screen and (max-width: 760px)
+  #intro-hexagons-right
+    display none
+  #mc-embedded-subscribe
+    margin-top 20px
+
+@media screen and (max-width: 400px)
+  #mce-email
+  #mc-embedded-subscribe
+    max-width 60%
+    line-height: 40px

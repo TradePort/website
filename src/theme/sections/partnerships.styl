@@ -1,0 +1,135 @@
+
+#partnerships
+  background-color #F6F5F9
+  padding-top 200px
+  padding-bottom 100px
+
+  @media screen and (min-width: 48em)
+    padding-top 400px
+    padding-bottom 100px
+
+  #partnerships-title
+    display flex
+    margin-bottom 3rem
+
+#partnerships-organizations-carousel
+#partnerships-media-carousel
+  padding 2rem 0
+
+  @media screen and (min-width: 48em)
+    padding 4rem 0
+
+.partnerships-arrow-left
+.partnerships-arrow-right
+  ui-fonts()
+  font-size 66px
+  color #E1DEE8
+  cursor pointer
+  margin-top -28px
+  background-color transparent
+  border none
+  outline none
+  &:hover
+    color $color-link
+
+//
+// carousel generic styles
+//
+
+.carousel-outer
+  display flex
+  overflow auto
+  align-items center
+  width 100%
+  &.hide-scrollbars
+    overflow hidden !important
+
+.carousel-item
+  display block
+  margin-right 2rem
+
+//
+// carousel partner organizations styles
+//
+
+.carousel-organization-item
+  // width 25%
+  min-width 25%
+  // max-width 25%
+
+.carousel-organization-img
+  display block
+  margin auto
+  height 65px
+  filter: grayscale(100%)
+  transition filter 0.3s
+  &:hover
+    filter: grayscale(0%)
+
+
+//
+// carousel media link-cards
+//
+
+.carousel-media-item
+  border-radius 3px
+  padding-top $spacing-large
+  min-width 31%
+  margin-right $m-spacing
+  background-color white
+  justify-items center
+
+.carousel-media-heading
+  color #403656
+  line-height 1.25
+  padding $l-spacing
+  font-size $h4-font-size
+  border-bottom 1px solid #EEEEEE
+
+  &:hover
+    color #4A93FF
+    text-decoration underline
+
+.carousel-media-icon
+  width 33px
+  height 33px
+  margin-bottom $m-spacing
+
+.carousel-media-img
+  width 100%
+
+// medium
+@media screen and (max-width: 1020px)
+  .carousel-organization-item
+    min-width 35%
+
+  .carousel-media-item
+    min-width 50%
+
+// phone or tablet
+@media screen and (max-width: 760px)
+
+  .carousel-organization-item
+    min-width 50%
+
+  .carousel-media-item
+    min-width 50%
+
+// phone small
+@media screen and (max-width: 400px)
+
+  .col-xs-1
+    display none
+
+  .carousel-outer
+    padding $spacing-large
+    margin auto
+
+  .carousel-organization-item
+    min-width 50%
+
+  .carousel-organization-img
+    height 40px
+
+  .carousel-media-item
+    min-width 90%

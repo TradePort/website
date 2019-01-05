@@ -1,0 +1,68 @@
+
+#building-blocks
+  background-color #F6F5F9
+  background-image: url('../../img/building-blocks/background.svg')
+  margin-top 80px
+  padding 100px 0
+
+#building-blocks-points
+  padding 0 $spacing-large
+  .bb-subsection2
+    .bb-point-title
+      display flex
+      align-items flex-end
+      .point-number
+        flex 0.25
+        img
+          width 99%
+      h3
+        flex 0.75
+        position relative
+        left -20px
+    .bb-description-link
+      display flex
+      p
+        font-size: $body-meduim-font-size
+        color: rgba(64, 54, 86, 0.7)
+  .bb-mobile-link
+    display none
+
+@media screen and (max-width: 760px)
+  #building-blocks-description
+    margin-top 50px
+
+  #building-blocks-points
+    margin-top 0;
+
+  #building-blocks-points
+    .bb-point-title
+      align-items center !important
+      .point-number
+        flex 0.4 !important
+        img
+          width 99%
+      h3
+        position unset !important
+        margin $spacing-large
+    .bb-description-link
+      flex-direction column
+      p
+        flex 1
+        margin-left 0 !important
+    .watercolor-btn
+      display none
+    .bb-mobile-link
+      display block
+      flex 1
+
+@media screen and (min-width: 760px)
+  #building-blocks-description
+    margin-top 75px
+  #building-blocks-points
+    margin-top 0
+
+@media screen and (min-width: 1020px)
+  #building-blocks-description
+    margin-top 0
+  #building-blocks-points
+    margin-top 10px
